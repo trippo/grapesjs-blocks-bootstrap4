@@ -31,7 +31,7 @@ export default (editor, config = {}) => {
     'light', 'dark'
   ];
 
-  const contexts_w_white = contexts.concat(['white']);
+  const contexts_w_white = contexts.concat(['white','muted']);
 
   const sizes = {
     'lg': 'Large',
@@ -100,6 +100,70 @@ export default (editor, config = {}) => {
           defaults: Object.assign({}, defaultModel.prototype.defaults, {
             tagName: 'div',
             traits: [
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'mt-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Margin Top'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'mb-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Margin Bottom'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'ml-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Margin Left'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'mr-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Margin Right'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'pt-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Padding Top'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'pb-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Padding Bottom'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'pl-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Padding Left'
+              },
+              {
+                type: 'class_select',
+                options: [
+                  {value: '', name: 'Default'},
+                  ... [0,1,2,3,4,5,'auto'].map(function(v) { return {value: 'pr-'+v, name: _s.capitalize(v)} })
+                ],
+                label: 'Padding Right'
+              },
               {
                 type: 'class_select',
                 options: [
