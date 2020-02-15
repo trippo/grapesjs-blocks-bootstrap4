@@ -10,10 +10,9 @@ export default (editor, config = {}) => {
 
 
     if(c.gridDevicesPanel) {
-      console.log('add DEVICE yeah');
       const panels = editor.Panels;
       const commands = editor.Commands;
-      var panelDevices = panels.addPanel({id: 'devices-c'});
+      var panelDevices = panels.addPanel({id: 'devices-buttons'});
       var deviceBtns = panelDevices.get('buttons');
       deviceBtns.add([{
         id: 'deviceXl',

@@ -130,7 +130,7 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts 
     labels: Object.assign(default_labels, opts_labels),
     blockCategories: Object.assign(default_categories, opts_categories),
     gridDevices: true,
-    gridDevicesPanel: true,
+    gridDevicesPanel: false,
   },  ...opts };
 
   // Add components
