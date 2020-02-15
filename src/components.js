@@ -346,7 +346,7 @@ export default (editor, config = {}) => {
           defaults: Object.assign({}, defaultModel.prototype.defaults, {
             'custom-name': 'Row',
             tagName: 'div',
-            draggable: '.container, .container-fluid',
+            //draggable: '.container, .container-fluid',
             droppable: true,
             traits: [
               {
