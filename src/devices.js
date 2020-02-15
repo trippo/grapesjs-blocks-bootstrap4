@@ -13,7 +13,7 @@ export default (editor, config = {}) => {
       console.log('add DEVICE yeah');
       const panels = editor.Panels;
       const commands = editor.Commands;
-      var panelDevices = panels.addPanel({id: 'devices-buttons'});
+      var panelDevices = panels.addPanel({id: 'devices-c'});
       var deviceBtns = panelDevices.get('buttons');
       deviceBtns.add([{
         id: 'deviceXl',
