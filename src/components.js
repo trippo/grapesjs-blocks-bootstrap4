@@ -178,7 +178,7 @@ export default (editor, config = {}) => {
                   {value: '', name: 'Default'},
                   ... contexts_w_white.map(function(v) { return {value: 'table-'+v, name: _s.capitalize(v)} })
                 ],
-                label: 'Table Background color'
+                label: 'Table background color'
               },
               {
                 type: 'class_select',
