@@ -272,7 +272,27 @@ export default (editor, config = {}) => {
         }
       });
     }
-
+    if (blocks.table) {
+      bm.add('table', {
+        id: 'table',
+        label: 'Table',
+        category: 'Basic',
+        attributes: { class: 'fa fa-table' },
+        content: `
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+                <thead>
+                <tr><th><div>Title</div></th><th><div>Title</div></th><th><div>Title</div></th></tr>
+                </thead>
+                <tbody>
+                <tr><td><div>Text</div></td><td><div>Text</div></td><td><div>Text</div></td></tr>
+                </tbody>
+            </table>
+        </div>
+        `,
+    });
+    
+    }
     if (blocks.image) {
       // example of how we might include encoded image as default src. i like the idea but it mucks up the settings src field
       //let default_src = 'data:image/png;base64,iVB\ORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEU\AAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8\yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAEl\FTkSuQmCC'

@@ -64,8 +64,9 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts 
   const default_blocks = {
     default: true,
     text: true,
-    link: true,
+    link: false,
     image: true,
+    table: true,
     // LAYOUT
     container: true,
     row: true,
@@ -114,6 +115,7 @@ export default grapesjs.plugins.add('grapesjs-blocks-bootstrap4', (editor, opts 
     paragraph: 'Paragraph',
     // BASIC
     image: 'Image',
+    table: 'Tabe',
     link: 'Link',
     list: 'Simple List'
   }
